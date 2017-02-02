@@ -13,7 +13,7 @@ class Article(models.Model) :
     content = models.TextField(blank = True, null = True)  #博客文章正文
 
     #python2使用__unicode__, python3使用__str__
-    def __str__(self) :
+    def __unicode__(self) :
         return self.title
 
     class Meta:  #按时间下降排序
